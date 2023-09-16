@@ -1,7 +1,8 @@
 import Profile from "./components/Ppofile/Profile";
 import Statistics from "./components/Statistics/Statistics";
 import FriendList from "./components/Friendlist/FriendList";
-import TransactionHistory from "./components/Transactionhistory/TransactionHistory"
+import TransactionHistory from "./components/Transactionhistory/TransactionHistory";
+import  FriendListItem  from "./components/FriendListItem/FriendListItem";
 import user from "./user.json";
 import data from "./data.json";
 import friends from "./friends.json";
@@ -18,7 +19,8 @@ export default function App() {
       />
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
-         <TransactionHistory items={transactions} /> 
+      <TransactionHistory items={transactions} />
+      <FriendListItem friends={friends} />
     </div>
   );
 }
